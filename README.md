@@ -4,7 +4,7 @@ This is a starter template for Node.js projects that includes a basic setup for 
 
 ## Getting Started
 
-To get started with this starter template, simply clone the repository and run `npm install` to install the required dependencies. Once the dependencies are installed, you can start the development server by running `npm start`.
+To get started with this starter template, simply clone the repository and run `yarn install` to install the required dependencies. Once the dependencies are installed, you can start the development server by running `yarn start`.
 
 ## Features
 
