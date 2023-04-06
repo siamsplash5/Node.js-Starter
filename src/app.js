@@ -3,15 +3,14 @@ const express = require('express');
 
 // Module scaffolding
 const app = express();
-const port = 5000;
-
 /*
-For environment variables like ports, database connection strings, and other sensitive data,
-1. Install the dotenv package using the following command: yarn add dotenv
-2. Create a .env file and add the variable like this: PORT=5000
-3. Access the variable by writing this in your code: process.env.PORT
-For simplicity, we have not included these dependencies by default.
+For environment variables like ports, database connection strings etc. it is recommended to use .env file. To use .env file:
+    1. Create a .env file and add the variable like this: 'PORT=5000' (witout qoutes).
+    2. Install the dotenv package using the following command: 'yarn add --dev dotenv' (without qoutes).
+    3. Finally, access the variable by writing this in your code: process.env.PORT
+For simplicity, I have not included this dependency by default.
 */
+const port = 5000;
 
 // Creating a default router for our app
 app.get('/', (req, res) => {
