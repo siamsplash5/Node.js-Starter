@@ -7,7 +7,10 @@ const app = express();
 For environment variables like ports, database connection strings etc. it is recommended to use .env file. To use .env file:
     1. Create a .env file and add the variable like this: 'PORT=5000' (witout qoutes).
     2. Install the dotenv package using the following command: 'yarn add --dev dotenv' (without qoutes).
-    3. Finally, access the variable by writing this in your code: process.env.PORT
+    3. Write the following code in the top of your file
+            const dotnev = require('dotenv');
+            dotenv.config();
+    4. Finally, access the variable by writing this in your code: process.env.PORT
 For simplicity, I have not included this dependency by default.
 */
 const port = 5000;
